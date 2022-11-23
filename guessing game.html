@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>guessing game using javascript</title>
+    </head>
+    <body>
+        <p>Guess the number that I am thinking of (0-5)</p>
+        <input type="text" id="samp">
+        <button id="guess">Guess</button>
+        <button id="clear">try again</button>
+        <script type="text/javascript">
+        document.getElementById("guess").onclick = function (){
+        var x;
+        x = Math.floor((Math.random() *6))
+        var y = document.getElementById("samp").value;
+        if(y == x)
+        {
+            alert("that's correct!");
+        }
+        else
+        {
+            alert("Sorry, try again. " + "The number was " + x);   
+        }
+        }
+        document.getElementById("clear").onclick = function ()
+        {
+            document.getElementById("samp").value = "";
+        }
+        </script>
+    </body>
+</html>

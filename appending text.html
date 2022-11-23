@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>appending text with js</title>
+    </head>
+    <body>
+        <p id="text">this is a paragraph</p>
+        <button id="ct">change text</button>
+        <p id="sp">whatever you believe you can </p>
+        <button id="at">append text</button>
+        <button id="clear">clear</button>
+        <p id="mt"></p>
+        <button id="amt">click me!</button>
+        <script type="text/javascript">
+        document.getElementById("ct").onclick = function()
+        {
+            document.getElementById("text").innerHTML = "being mediocre got nobody anywhere!";
+        }
+        document.getElementById("at").onclick = function()
+        {
+            document.getElementById("sp").innerHTML = document.getElementById("sp").innerHTML + " achieve" ;
+        }
+        document.getElementById("clear").onclick = function()
+        {
+            document.getElementById("sp").innerHTML = "whatever you believe you can ";
+        }
+        document.getElementById("amt").onclick = function()
+        {
+            document.getElementById("mt").innerHTML = "This text is supposed to appear out of nowhere";
+        }
+        </script>
+    </body>
+</html>

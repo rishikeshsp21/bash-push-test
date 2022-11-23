@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>replacing text</title>
+    </head>
+    <body>
+        <p id="samp">This is some text</p>
+        <input type="text" id="ti">
+        <button id="ct">change text</button>
+        <script>
+            document.getElementById("ct").onclick = function() {
+                var textent = "";
+                textent = document.getElementById("ti").value;
+                document.getElementById("samp").innerHTML = textent;
+            }
+        </script>
+    </body>
+</html>
